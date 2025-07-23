@@ -1,0 +1,8 @@
+# Copyright Open Charts Community. All Rights Reserved.
+# SPDX-License-Identifier: MIT
+
+## open-charts/common
+## It is required by CI/CD tools and processes.
+## @skip exampleValue
+##
+exampleValue: common-chart

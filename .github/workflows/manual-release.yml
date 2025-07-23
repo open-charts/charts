@@ -1,0 +1,71 @@
+name: Manual Chart Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.14.0
+
+      - name: Package charts
+        run: |
+          mkdir -p .cr-release-packages
+          for chart in charts/*/; do
+            if [ -f "$chart/Chart.yaml" ]; then
+              helm package "$chart" -d .cr-release-packages
+            fi
+          done
+
+      - name: Create gh-pages branch if it doesn't exist
+        run: |
+          git checkout gh-pages || git checkout -b gh-pages
+          git rm -rf . || true
+          git clean -fd
+          echo "# Open Charts Helm Repository" > README.md
+          git add README.md
+          git commit -m "Initial gh-pages" || echo "No changes to commit"
+          git push origin gh-pages || git push --set-upstream origin gh-pages
+
+      - name: Checkout main again
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Upload packages to releases
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for pkg in .cr-release-packages/*.tgz; do
+            if [ -f "$pkg" ]; then
+              chart_name=$(basename "$pkg" .tgz | sed 's/-[0-9].*//')
+              chart_version=$(basename "$pkg" .tgz | sed 's/.*-//')
+              echo "Uploading $chart_name version $chart_version"
+              gh release create "$chart_name-$chart_version" "$pkg" \
+                --title "$chart_name $chart_version" \
+                --notes "Release of $chart_name version $chart_version" || echo "Release might already exist"
+            fi
+          done
+
+      - name: Update index.yaml
+        run: |
+          helm repo index . --url https://github.com/open-charts/charts/releases/download
+          git checkout gh-pages
+          cp index.yaml .
+          git add index.yaml
+          git commit -m "Update index.yaml" || echo "No changes to commit"
+          git push origin gh-pages

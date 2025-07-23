@@ -1,0 +1,38 @@
+# Claude-related files
+.claude*
+claude*
+CLAUDE.md
+.claude-code/
+.claude-assistant/
+*.claude
+*.claude.json
+*.claude.yaml
+*.claude.yml
+
+# Helm dependencies
+charts/*/charts/
+charts/*/Chart.lock
+
+# Helm packages
+*.tgz
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
