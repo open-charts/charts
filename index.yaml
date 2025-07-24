@@ -5,16 +5,16 @@ entries:
       category: Database
       images: |
         - name: mysql
-          image: docker.io/bitnami/mysql:9.4.0-debian-12-r0
+          image: ghcr.io/open-charts/mysql:9.4.0-debian-12-r0
         - name: mysqld-exporter
-          image: docker.io/bitnami/mysqld-exporter:0.17.2-debian-12-r14
+          image: ghcr.io/open-charts/mysqld-exporter:0.17.2-debian-12-r14
         - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r49
+          image: ghcr.io/open-charts/os-shell:12-debian-12-r49
       licenses: MIT
       tanzuCategory: service
     apiVersion: v2
     appVersion: 9.4.0
-    created: "2025-07-24T08:16:15.817408+04:00"
+    created: "2025-07-24T11:58:33.249106+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -24,7 +24,7 @@ entries:
     description: MySQL is a fast, reliable, scalable, and easy to use open source
       relational database system. Designed to handle mission-critical, heavy-load
       production applications.
-    digest: 976fd8f576ab8b177c9a8fb2de21273ba1f26a556b91e11e29f0aeb4c754116b
+    digest: ee09dbd8c5fd2f3b4d14dae5f3413f4fe7e9e33dbe1f4003d44af4d9b5af718b
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/mysql/icon.png
     keywords:
@@ -47,16 +47,16 @@ entries:
       category: Infrastructure
       images: |
         - name: git
-          image: docker.io/bitnami/git:2.50.1-debian-12-r1
+          image: ghcr.io/open-charts/git:2.50.1-debian-12-r1
         - name: nginx
-          image: docker.io/bitnami/nginx:1.29.0-debian-12-r4
+          image: ghcr.io/open-charts/nginx:1.29.0-debian-12-r4
         - name: nginx-exporter
-          image: docker.io/bitnami/nginx-exporter:1.4.2-debian-12-r7
+          image: ghcr.io/open-charts/nginx-exporter:1.4.2-debian-12-r7
       licenses: MIT
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.29.0
-    created: "2025-07-24T08:16:15.8203+04:00"
+    created: "2025-07-24T11:58:33.251404+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -66,7 +66,7 @@ entries:
     description: NGINX Open Source is a web server that can be also used as a reverse
       proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
       to its ability to provide faster content.
-    digest: e8b00a73b588610808121534ad2479d6742cba0c21fe2fcddf92af4d2e625f47
+    digest: bff3aec7027a985434d99087ac579405569dc413ea97a071f48f411e1d49c670
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/nginx/icon.png
     keywords:
@@ -89,16 +89,16 @@ entries:
       category: Database
       images: |
         - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r49
+          image: ghcr.io/open-charts/os-shell:12-debian-12-r49
         - name: postgres-exporter
-          image: docker.io/bitnami/postgres-exporter:0.17.1-debian-12-r13
+          image: ghcr.io/open-charts/postgres-exporter:0.17.1-debian-12-r13
         - name: postgresql
-          image: docker.io/bitnami/postgresql:17.5.0-debian-12-r20
+          image: ghcr.io/open-charts/postgresql:17.5.0-debian-12-r20
       licenses: MIT
       tanzuCategory: service
     apiVersion: v2
     appVersion: 17.5.0
-    created: "2025-07-24T08:16:15.824152+04:00"
+    created: "2025-07-24T11:58:33.255145+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -108,7 +108,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: fff865b336a947a1a17c69ecb16376a6d846f900ece7e3d0d51bee5fd4ad39a1
+    digest: ce8e141c40e362e60aae51ff710e87afed4be551c89861bcb78ab42ef87c7fea
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/postgresql/icon.png
     keywords:
@@ -132,14 +132,14 @@ entries:
       category: Infrastructure
       images: |
         - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r48
+          image: ghcr.io/open-charts/os-shell:12-debian-12-r48
         - name: rabbitmq
-          image: docker.io/bitnami/rabbitmq:4.1.2-debian-12-r0
+          image: ghcr.io/open-charts/rabbitmq:4.1.2-debian-12-r0
       licenses: MIT
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.1.2
-    created: "2025-07-24T08:16:15.82695+04:00"
+    created: "2025-07-24T11:58:33.2587+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -149,7 +149,7 @@ entries:
     description: RabbitMQ is an open source general-purpose message broker that is
       designed for consistent, highly-available messaging scenarios (both synchronous
       and asynchronous).
-    digest: 74874d07a9e469430ba704116bbe7840e88bdaf5d3046ad9accf8d26c7f03347
+    digest: 04ffba4831bf6e926affcf5299109f9685edb3087867edd5b924c6bef441a2fb
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/rabbitmq/icon.png
     keywords:
@@ -170,20 +170,20 @@ entries:
       category: Database
       images: |
         - name: kubectl
-          image: docker.io/bitnami/kubectl:1.33.3-debian-12-r0
+          image: ghcr.io/open-charts/kubectl:1.33.3-debian-12-r0
         - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r48
+          image: ghcr.io/open-charts/os-shell:12-debian-12-r48
         - name: redis
-          image: docker.io/bitnami/redis:8.0.3-debian-12-r1
+          image: ghcr.io/open-charts/redis:8.0.3-debian-12-r1
         - name: redis-exporter
-          image: docker.io/bitnami/redis-exporter:1.74.0-debian-12-r2
+          image: ghcr.io/open-charts/redis-exporter:1.74.0-debian-12-r2
         - name: redis-sentinel
-          image: docker.io/bitnami/redis-sentinel:8.0.3-debian-12-r1
+          image: ghcr.io/open-charts/redis-sentinel:8.0.3-debian-12-r1
       licenses: MIT
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.0.3
-    created: "2025-07-24T08:16:15.831606+04:00"
+    created: "2025-07-24T11:58:33.263579+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -193,7 +193,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: a2f7be3b246b906cf0709de81edc4c97b1773112c2f260d3178589f1ec03ada0
+    digest: d68d56741768a0401097ac61d87803535a8e14f6cacbceca1e49d63bd9cb3c1f
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/redis/icon.png
     keywords:
@@ -209,4 +209,4 @@ entries:
     urls:
     - https://open-charts.github.io/charts/redis-21.2.13.tgz
     version: 21.2.13
-generated: "2025-07-24T08:16:15.814278+04:00"
+generated: "2025-07-24T11:58:33.244049+04:00"
