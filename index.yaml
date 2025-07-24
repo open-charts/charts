@@ -14,7 +14,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 9.4.0
-    created: "2025-07-24T12:04:30.608994+04:00"
+    created: "2025-07-24T17:09:34.172579+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -24,7 +24,7 @@ entries:
     description: MySQL is a fast, reliable, scalable, and easy to use open source
       relational database system. Designed to handle mission-critical, heavy-load
       production applications.
-    digest: bf8c35ac4b05a8c1802ee45af57db3766f2c5de2aacba064ada6f1821d60e8d4
+    digest: 9692b1a070ea42f266f515ed025ed2e8600e07b0370a3b48333491ac041e1fc6
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/mysql/icon.png
     keywords:
@@ -56,7 +56,7 @@ entries:
       tanzuCategory: clusterUtility
     apiVersion: v2
     appVersion: 1.29.0
-    created: "2025-07-24T12:04:30.612646+04:00"
+    created: "2025-07-24T17:09:34.174495+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -66,7 +66,7 @@ entries:
     description: NGINX Open Source is a web server that can be also used as a reverse
       proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due
       to its ability to provide faster content.
-    digest: 18a4ba16a9150f8f12d8184b60568f594dce0534ebde333493de4e9a9482d401
+    digest: 3be93774d57465e9e4502422f29329028f948f61c6f267ec7dda50fcd3f3f175
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/nginx/icon.png
     keywords:
@@ -98,7 +98,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 17.5.0
-    created: "2025-07-24T12:04:30.616331+04:00"
+    created: "2025-07-24T17:09:34.17822+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -108,7 +108,7 @@ entries:
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: 9a67d269954ce02b0a97eb84fc701f7d15dad6ccf180163609c0316fbff83371
+    digest: 4457c8efd648f86f82c701c9f026587bf32a124fbaac3785ac7914eeae1ce318
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/postgresql/icon.png
     keywords:
@@ -139,7 +139,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 4.1.2
-    created: "2025-07-24T12:04:30.619793+04:00"
+    created: "2025-07-24T17:09:34.181402+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -149,7 +149,7 @@ entries:
     description: RabbitMQ is an open source general-purpose message broker that is
       designed for consistent, highly-available messaging scenarios (both synchronous
       and asynchronous).
-    digest: 239c6d9cd876d33e3c4717728040d82e0964cb868b30fd076bb70864610b005e
+    digest: d639552ae4c4a7cf5dbc3a3dd0ae134d3c96a92b668af4aa01371586ea8695db
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/rabbitmq/icon.png
     keywords:
@@ -183,7 +183,7 @@ entries:
       tanzuCategory: service
     apiVersion: v2
     appVersion: 8.0.3
-    created: "2025-07-24T12:04:30.625415+04:00"
+    created: "2025-07-24T17:09:34.185525+04:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -193,7 +193,7 @@ entries:
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 05c691e4c46c05f9615d6cb84c7321ce24f66f3163aa63ae1ff4491357c5d136
+    digest: 6b4e2f202b438d42a5f10c4f34dea005a09e15396d49066c02583ce30a61d032
     home: https://github.com/open-charts/charts
     icon: https://raw.githubusercontent.com/open-charts/charts/main/charts/redis/icon.png
     keywords:
@@ -209,4 +209,4 @@ entries:
     urls:
     - https://open-charts.github.io/charts/redis-21.2.13.tgz
     version: 21.2.13
-generated: "2025-07-24T12:04:30.605392+04:00"
+generated: "2025-07-24T17:09:34.168807+04:00"
